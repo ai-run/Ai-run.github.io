@@ -4,7 +4,7 @@
 
    * 保持服务器网络畅通
 
-#二、安装
+# 二、安装
   * 以下命令均在一个终端里面执行
 
         $ systemctl enable firewalld \
@@ -136,7 +136,7 @@
           && echo -e "\033[31m 你的数据库密码是 $DB_PASSWORD \033[0m" \
           && echo -e "\033[31m 你的BOOTSTRAP_TOKEN是 $BOOTSTRAP_TOKEN \033[0m" \
           && echo -e "\033[31m 你的服务器IP是 $Server_IP \033[0m"
-#三、启动和关闭脚本
+# 三、启动和关闭脚本
 * 启动脚本
         
         $ vi /opt/start_jms.sh
@@ -185,7 +185,7 @@
         cd $Project/jumpserver && ./jms stop
 
         exit 0
-#四、开机自启
+# 四、开机自启
         # 写入 rc.local
         $ chmod +x /etc/rc.local
         $ echo "sh /opt/start_jms.sh" >> /etc/rc.local
